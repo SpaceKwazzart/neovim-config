@@ -16,3 +16,4 @@ vim.keymap.set("v", "l", "k", { noremap = true })
 vim.keymap.set("v", ";", "l", { noremap = true })
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("i", "jk", "<ESC>", { noremap = true })

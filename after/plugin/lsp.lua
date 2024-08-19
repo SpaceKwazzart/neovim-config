@@ -83,6 +83,7 @@ on_init = function(client)
 }
 
 require'lspconfig'.golangci_lint_ls.setup{}
+require'lspconfig'.sqlls.setup{}
 
 local cmp = require('cmp')
 
