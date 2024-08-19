@@ -1,2 +1,1 @@
 require("kwazzart")
-print("hello")
