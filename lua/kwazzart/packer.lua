@@ -16,15 +16,20 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme rose-pine')
 	  end
   })
+  
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+  }
 
- use ( 'nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'} )
- use ( 'nvim-treesitter/playground' )
- use ( 'theprimeagen/harpoon' )
- use ( 'mbbill/undotree' )
- use ( 'tpope/vim-fugitive' )
+  use ( 'nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'} )
+  use ( 'nvim-treesitter/playground' )
+  use ( 'theprimeagen/harpoon' )
+  use ( 'mbbill/undotree' )
+  use ( 'tpope/vim-fugitive' )
 
- use({'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'})
- use({'neovim/nvim-lspconfig'})
- use({'hrsh7th/nvim-cmp'})
- use({'hrsh7th/cmp-nvim-lsp'})
+  use({'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'})
+  use({'neovim/nvim-lspconfig'})
+  use({'hrsh7th/nvim-cmp'})
+  use({'hrsh7th/cmp-nvim-lsp'})
 end)
